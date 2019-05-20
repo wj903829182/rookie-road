@@ -142,7 +142,45 @@
 
 # 17 编程思想
 
-# 18 编程案例
+# 18 工具和案例
+
+## 18.1 编程常用工具
+
+### 18.1.1 PostMan
+
+​         PostMan可以用来测试后台接口，支持REST接口，Form表单形式，文件上传，需要权限的接口
+
+### 18.1.2 Navicat Premium 
+
+​         数据库客户端工具
+
+### 18.1.3 IDEA
+
+​        非常好用的写java代码的工具
+
+### 18.1.4 Typora 
+
+​        Windows和Linux or MAC中免费的用于写Markdown的工具，比较好用
+
+### 18.1.5 Everything 
+
+​    windows下查找文件非常方便的软件
+
+### 18.1.6 xftp和xshell 
+
+​    操作linux的客户端，xshell用于linux命令工具，xftp用于linux中文件上传下载的工具
+
+### 18.1.7 Notepad++ 
+
+​     windows下用于编辑文本的工具，比较方便
+
+### 18.1.8 sublime 
+
+​    一个简洁快速写文本的工具，结合插件可以用于来写前端代码，前端开发人员用的比较多
+
+### 18.1.9 HBuilder
+
+​    一个可以用来写前端的IDEA,也可以使用这个工具利用前端来写android的app，ios的app
 
 # 19 逻辑思维
 
