@@ -49,6 +49,11 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <!-- IO流处理工具包 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
         <!--动态代理 Cglib的BeanCopier进行Bean拷贝的理由是，其性能要比Spring的BeanUtils，
         Apache的BeanUtils和PropertyUtils要好很多，尤其是数据量比较大的情况下 -->
         <dependency>
@@ -60,6 +65,12 @@
         <dependency>
             <groupId>net.sf.dozer</groupId>
             <artifactId>dozer</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
