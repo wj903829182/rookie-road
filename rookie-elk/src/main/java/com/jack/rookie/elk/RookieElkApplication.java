@@ -1,15 +1,13 @@
-package com.jack;
+package com.jack.rookie.elk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.lang.reflect.Field;
-
 @SpringBootApplication
-public class RookieRoadApplication {
+public class RookieElkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RookieRoadApplication.class, args);
+		SpringApplication.run(RookieElkApplication.class, args);
 	}
 
 }

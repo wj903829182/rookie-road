@@ -74,6 +74,10 @@
 
 ## 6.2 HTTP
 
+### 6.2.1 HTTP协议和状态保持 
+
+​     cgi，jspserverlet，http无状态
+
 ## 6.3 HTTPS
 
 ## 6.4 网络IO
@@ -86,6 +90,10 @@
 
  服务端状态保持session
  session的机制：
+
+httpServeletRequest.getSession(true)被调用的时候创建
+
+jsp -session   -->servelet
 
 ### 6.6.2 Cookie
 
@@ -112,15 +120,20 @@
 1. cookie是如何分发的
     服务端通过返回指令提升浏览器生成
     js生成
-
 2. cookie是如何使用的
     cookie所作用的范围大于等于当前请求的资源所在的位置
     cookie的组成：名字，值，过期时间，路径，域
 3. cookie的过期时间
     未设置过期时间---------会话cookie，浏览器关闭cookie消失
     设置过期时间--------------关闭浏览器cookie不消失，会存在硬盘直到过期
+4. 协议本身支持状态行为；cookie客户端状态保持，session服务端状态保持
 
 ### 6.6.5 分布式环境下如何解决session跨域共享问题
+
+1. session数据同步，比如tomcat的session同步（适合小的集群）
+2. session存入redis（eg：tomcat+redis，适合session数比较多，服务器数量比较大的情况）
+3. session维护在客户端，access_token/token（存在安全性问题）
+4. spring-session加redis实现session共享
 
 # 7 日志
 
