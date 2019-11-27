@@ -74,5 +74,6 @@ public class ResultUtils {
         jsonObject.put("失败", "失败数据");
         System.out.println(JSONObject.toJSON(ResultUtils.fail("调用失败",jsonObject)));
         System.out.println(JSONObject.toJSON(ResultUtils.fail(500,"内部服务器错误",jsonObject)));
+
     }
 }
