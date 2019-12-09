@@ -6,6 +6,9 @@
     <modules>
         <module>rookie-api</module>
         <module>rookie-common</module>
+        <module>rookie-practice</module>
+        <module>rookie-elk</module>
+        <module>rookie-test</module>
     </modules>
 
     <groupId>com.jack</groupId>

@@ -1,0 +1,13 @@
+
+#spring:
+  #profiles:
+    #active: dev
+    #include: test
+name: rose
+sex: "man"
+age: 18
+logging:
+  level:
+    org.springframework: debug
+server:
+  port: 8080
