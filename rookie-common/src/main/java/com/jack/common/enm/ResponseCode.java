@@ -1,7 +1,5 @@
 package com.jack.common.enm;
 
-import lombok.Data;
-
 /**
  * Created By Jack on 2019/12/22
  *
@@ -14,7 +12,17 @@ import lombok.Data;
  */
 
 public enum ResponseCode {
-    SUCCESS(200,"success"),
+    /**
+     * 成功
+     */
+    SUCCESS(1,"success"),
+    /**
+     * 资源不存在的状态码
+     */
+    RESOURCES_NOT_EXIST(404, "资源不存在"),
+    /**
+     * 内部错误
+     */
     SERVICE_ERROR(500,"内部服务错误");
     /**
      * 状态码
