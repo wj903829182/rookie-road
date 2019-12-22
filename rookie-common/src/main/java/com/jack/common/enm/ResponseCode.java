@@ -20,10 +20,17 @@ public enum ResponseCode {
      * 资源不存在的状态码
      */
     RESOURCES_NOT_EXIST(404, "资源不存在"),
+    DATA_NOT_EXIST(4001, "未查找到数据"),
     /**
      * 内部错误
      */
-    SERVICE_ERROR(500,"内部服务错误");
+    SERVICE_ERROR(5000,"内部服务器错误"),
+    PARAMETER_ERROR(5001,"参数错误"),
+    KNOWN_ERROR(5002,"已知错误"),
+    UNKNOWN_ERROR(5003,"未知错误"),
+    DATA_ERROR(5004,"未知错误"),
+
+    ;
     /**
      * 状态码
      */
