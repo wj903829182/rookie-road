@@ -11,6 +11,7 @@ import lombok.EqualsAndHashCode;
  * @date: 2019/12/22 20:47
  * @Description:
  * 业务异常类，继承运行时异常，确保事务正常回滚
+ * https://segmentfault.com/a/1190000019795918
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

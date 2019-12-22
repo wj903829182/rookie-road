@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author jack
  * @date: 2019/11/27 21:02
  * @Description:
- *
+ *https://segmentfault.com/a/1190000019795918
  *
  * @Accessors(chain = true)支持链式调用
  * @Builder支持静态链式调用
