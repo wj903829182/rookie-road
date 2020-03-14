@@ -9,6 +9,8 @@
         <module>rookie-practice</module>
         <module>rookie-elk</module>
         <module>rookie-test</module>
+        <module>rookie-consul</module>
+        <module>rookie-security</module>
     </modules>
 
     <groupId>com.jack</groupId>
