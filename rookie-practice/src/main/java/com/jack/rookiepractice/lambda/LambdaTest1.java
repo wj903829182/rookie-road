@@ -1,10 +1,13 @@
 package com.jack.rookiepractice.lambda;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Maps;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author jack
@@ -14,6 +17,17 @@ import java.util.List;
  * @Description:
  */
 public class LambdaTest1 {
+
+    private static Map<Integer,String> map_ = Maps.newHashMap();
+
+    static{
+        map_.put(1, "linode.com");
+        map_.put(2, "heroku.com");
+        map_.put(3, "digitalocean.com");
+        map_.put(4, "aws.amazon.com");
+        map_.put(5, "heroku.com");
+    }
+
 
 
     /**
@@ -75,7 +89,28 @@ public class LambdaTest1 {
     }
 
 
+    /**
+     *
+     */
+    public static void lambdaTest4(){
+        String result;
+        //Java8 Map->Stream->Filter->String
+        result =  map_.entrySet().stream().
+                filter(map->"heroku.com".equals(map.getValue()))
+                .map(map->map.getValue())
+                .collect(Collectors.joining());
+        System.out.println("Java 8 :" + result);
+
+        Map<Integer,String> collect =  map_.entrySet().stream()
+                //.filter(c->c.getKey()==2)
+                .filter(map->"heroku.com".equals(map.getValue()))
+                .collect(Collectors.toMap(p->p.getKey(),p->p.getValue()));
+        System.out.println(collect);
+
+    }
+
+
     public static void main(String[] args) {
-        lambdaTest3();
+        lambdaTest4();
     }
 }

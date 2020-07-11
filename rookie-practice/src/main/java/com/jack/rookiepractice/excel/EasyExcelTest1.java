@@ -85,6 +85,8 @@ public class EasyExcelTest1 {
         //exportTest1();
         //exportTest2();
         exportTest3();
+        ThreadLocal a;
+        Thread b;
         System.out.println("********end*********");
     }
 }
