@@ -31,6 +31,10 @@ public class ResultUtils {
         return Result.builder().code(SUCCESS_CODE).msg(msg).data(data).build();
     }
 
+    public static Result success(Integer code,String msg,Object data) {
+        return Result.builder().code(code).msg(msg).data(data).build();
+    }
+
     public static Result success(Object data) {
         return Result.builder().code(SUCCESS_CODE).msg(SUCCESS_MSG).data(data).build();
     }
