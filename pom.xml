@@ -11,6 +11,7 @@
         <module>rookie-test</module>
         <module>rookie-consul</module>
         <module>rookie-security</module>
+        <module>mindMap</module>
     </modules>
 
     <groupId>com.jack</groupId>
