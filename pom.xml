@@ -12,6 +12,7 @@
         <module>rookie-consul</module>
         <module>rookie-security</module>
         <module>mindMap</module>
+        <module>rookie-flowable</module>
     </modules>
 
     <groupId>com.jack</groupId>
