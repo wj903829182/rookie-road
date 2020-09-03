@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Flowable资料：
  * https://juejin.im/post/6866965996750667790?utm_source=gold_browser_extension
+ * http://www.shareniu.com/flowable6.5_zh_document/bpm/index.html
  */
 
 @SpringBootApplication
